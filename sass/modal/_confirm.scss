@@ -1,0 +1,30 @@
+.confirm {
+    display: block;
+    @include font(14px, 1.71, 400, 0.03em);
+    color: var(--main-color);
+    position: relative;
+    padding-left: 37px;
+    margin-bottom: 30px;
+}
+
+.confirm-check {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 15px;
+    display: inline-block;
+    border: 2px solid var(--sub-title-color);
+    border-radius: 2px;
+    .modal-checkbox:checked + & {
+        border: 2px solid var(--accent-color);
+        background-color: var(--accent-color);
+        background-image: url(../images/icons/check.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        box-sizing: border-box;
+    }
+}
+

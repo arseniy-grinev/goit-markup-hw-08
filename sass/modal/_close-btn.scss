@@ -1,0 +1,31 @@
+.modal-close-btn {
+    position: absolute;
+    /* display: flex; */
+    top: 10px;
+    right: 10px;
+    fill: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    fill: #000;
+    justify-content: center;
+    align-items: center;
+    /* transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
+}
+
+
+
+.icon-close {
+    position: absolute;
+    z-index: 3;
+    fill: inherit;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,23 @@
+.logo {
+    text-decoration: none;
+    font-family: "Raleway", Tahoma, sans-serif;
+    @include font(26px, 1.19, 700, 0.03em);
+    display: block;
+    &__part {
+        color: var(--accent-color);
+        }
+}
+
+.header--logo {
+    color: var(--header-logo-color);
+    margin-right: 94px;
+}
+
+.footer--logo {
+    color: var(--footer-logo-color);
+    margin-bottom: 20px;
+}
+
+// .logo__part {
+//     color: var(--accent-color);
+// }
