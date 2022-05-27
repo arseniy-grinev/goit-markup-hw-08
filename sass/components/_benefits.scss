@@ -1,15 +1,6 @@
 .benefits {
     padding-top: 60px;
     padding-bottom: 60px;
-
-    @include mobile {
-        max-width: 480px;
-    }
-
-    @include tablet {
-        max-width: 768px;
-    }
-
     @include desktop {
         padding-top: 94px;
         padding-bottom: 94px;
@@ -17,41 +8,27 @@
 }
 
 .benefits-list {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    // width: 100%;
-    // margin-left: auto;
-    // margin-right: auto;
-    // align-items: center;
-    // justify-content: space-between;
-
-    @include mobile {
-        width: 100%;
-    }
-
+    width: 100%;
     @include tablet {
         display: flex;
-        // flex-wrap: wrap;
+        flex-wrap: wrap;
+        // justify-content: center;
         margin-left: -30px;
     }
 
-    @include desktop {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
     &__item {
         max-width: 100%;
         margin-bottom: 30px;
         
         @include mobile {
-            // width: 270px;
+            width: 100%;
         }
         @include tablet {
             margin-left: 30px;
-            width: calc(100% / 2 - 30px);
+            width: calc(100% /2 - 30px);
         }
         @include desktop {
-            width: 270px;
+            width: calc(100% /4 - 30px);
         }
     }
 
