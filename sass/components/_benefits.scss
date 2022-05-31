@@ -8,7 +8,6 @@
 }
 
 .benefits-list {
-    width: 100%;
     @include tablet {
         display: flex;
         flex-wrap: wrap;

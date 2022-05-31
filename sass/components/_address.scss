@@ -1,22 +1,41 @@
+// .footer__adresses{
+//     align-items: center;
+// }
 .address {
+    align-items: center;
+    margin-bottom: 60px;
     &__text {
-        @include font(14px, 1.71, null, 0.03em)
+        @include font(14px, 1.71, null, 0.03em);
         font-style: normal;
         // font-size: 14px;
         // line-height: 1.71;
         // letter-spacing: 0.03em;
         color: var(--footer-color);
         margin-bottom: 9px;
+        
+        text-align: center;
+        @include desktop {
+            text-align: left;
+        }
+    @include desktop {
+        align-items: left;
+        margin-bottom: 0;
+    }
     }
 
     &__link {
         font-style: normal;
-        @include font(14px, 1.71, null, 0.03em)
+        @include font(14px, 1.71, null, 0.03em);
         // font-size: 14px;
         // line-height: 1.71;
         // letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
         display: block;
+        
+        text-align: center;
+        @include desktop {
+            text-align: left;
+        }
     }
 
     &__link + &__link {

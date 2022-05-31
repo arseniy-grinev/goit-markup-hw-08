@@ -4,8 +4,11 @@
 }
 
 .header-nav-list {
-    display: flex;
+    display: none;
     align-items: center;
+    @include tablet {
+        display: flex;
+    }
 }
 
 
@@ -39,7 +42,12 @@
         color: var(--accent-color);
     }
     & + & {
-        margin-left: 50px;
+        margin-top: 10px;
+        @include desktop {
+            margin-left: 50px;
+            margin-top: 0;
+        }
+        
     }
 }
 
@@ -50,7 +58,7 @@
     position: relative;
     &::after {
         position: absolute;
-        z-index: 12;
+        z-index: 1;
         content: "";
         bottom: -33px;
         left: 0;
@@ -70,7 +78,14 @@
 }
 
 .header-address-link {
-    display: flex;
+    display: none;
     margin-left: auto;
+    @include tablet {
+        display: block;
+    }
+    @include desktop {
+        display: flex;
+    }
+
 }
 

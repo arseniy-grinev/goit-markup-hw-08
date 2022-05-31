@@ -1,11 +1,14 @@
 .logo {
     text-decoration: none;
     font-family: "Raleway", Tahoma, sans-serif;
-    @include font(26px, 1.19, 700, 0.03em);
+    @include font(24px, 1.17, 700, 0.03em);
     display: block;
     &__part {
         color: var(--accent-color);
         }
+    @include desktop {
+        @include font(26px, 1.19, null, null);
+    }
 }
 
 .header--logo {
@@ -16,8 +19,10 @@
 .footer--logo {
     color: var(--footer-logo-color);
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    @include desktop {
+        display: block;
+    }
 }
 
-// .logo__part {
-//     color: var(--accent-color);
-// }

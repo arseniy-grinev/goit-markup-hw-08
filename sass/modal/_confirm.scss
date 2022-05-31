@@ -1,15 +1,19 @@
 .confirm {
     display: block;
-    @include font(14px, 1.71, 400, 0.03em);
+    @include font(12px, 1.17, 400, 0.03em);
     color: var(--main-color);
     position: relative;
-    padding-left: 37px;
+    padding-left: 24px;
     margin-bottom: 30px;
+    @include desktop {
+        @include font(14px, 1.71, null, null);
+        padding-left: 37px;
+    }
 }
 
 .confirm-check {
     position: absolute;
-    left: 12px;
+    left: 0;
     top: 50%;
     transform: translateY(-50%);
     width: 16px;

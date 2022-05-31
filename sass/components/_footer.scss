@@ -2,7 +2,26 @@
     background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
+    
     & .container {
+        // align-items: center;
+        @include desktop {
+            display: flex;
+        }
+    }
+
+}
+
+.tablet__wrap {
+    @media screen and (min-width: 768px)  {
         display: flex;
+        padding-left: 60px;
+        padding-right: 64px;
+        justify-content: space-between;
+    }
+    @include desktop {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
+

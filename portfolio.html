@@ -60,6 +60,62 @@
             +38 096 111 11 11</a
           >
         </div>
+        <button type="button" class="menu-open-btn">
+          <svg class="icon-menu-open" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden">
+          <button type="button" class="menu-close-btn">
+            <svg class="icon-menu-close" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <div class="container">
+            <ul class="menu-nav-list list">
+              <li class="menu-nav-item">
+                <a href="./index.html" class="menu-nav-link link">Студия</a>
+              </li>
+              <li class="menu-nav-item">
+                <a
+                  href="./portfolio.html"
+                  class="menu-nav-link link menu-nav-current"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="menu-nav-item">
+                <a href="" class="menu-nav-link link">Контакты</a>
+              </li>
+            </ul>
+            <div class="mob-bottom-wrap">
+              <div class="menu-address-link">
+                <a href="tel:+380961111111" class="menu-link link tel">
+                  +38 096 111 11 11</a
+                >
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="menu-link link mailto"
+                >
+                  info@devstudio.com
+                </a>
+              </div>
+              <ul class="mob-menu-soc list">
+                <li class="mob-menu-soc-item">
+                  <a class="mob-menu-soc-link link" href="">Instagram</a>
+                </li>
+                <li class="mob-menu-soc-item">
+                  <a class="mob-menu-soc-link link" href="">Twitter</a>
+                </li>
+                <li class="mob-menu-soc-item">
+                  <a class="mob-menu-soc-link link" href="">Facebook</a>
+                </li>
+                <li class="mob-menu-soc-item">
+                  <a class="mob-menu-soc-link link" href="">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -98,6 +154,10 @@
                 <div class="portfolio-item-wrap">
                   <img
                     class="portfolio-item-img"
+                    srcset="
+                      ./images/portfolio-img1.jpg     1x,
+                      ./images/portfolio-img1-2x.jpeg 2x
+                    "
                     src="./images/portfolio-img1.jpg"
                     alt="portfolio-imgage"
                     width="370"
@@ -119,6 +179,10 @@
                 <div class="portfolio-item-wrap">
                   <img
                     class="portfolio-item-img"
+                    srcset="
+                      ./images/portfolio-img2.jpg     1x,
+                      ./images/portfolio-img2-2x.jpeg 2x
+                    "
                     src="./images/portfolio-img2.jpg"
                     alt="portfolio-imgage"
                     width="370"
@@ -142,6 +206,10 @@
                 <div class="portfolio-item-wrap">
                   <img
                     class="portfolio-item-img"
+                    srcset="
+                      ./images/portfolio-img3.jpg     1x,
+                      ./images/portfolio-img3-2x.jpeg 2x
+                    "
                     src="./images/portfolio-img3.jpg"
                     alt="portfolio-imgage"
                     width="370"
@@ -163,6 +231,10 @@
                 <div class="portfolio-item-wrap">
                   <img
                     class="portfolio-item-img"
+                    srcset="
+                      ./images/portfolio-img4.jpg     1x,
+                      ./images/portfolio-img4-2x.jpeg 2x
+                    "
                     src="./images/portfolio-img4.jpg"
                     alt="portfolio-imgage"
                     width="370"
@@ -184,6 +256,10 @@
                 <div class="portfolio-item-wrap">
                   <img
                     class="portfolio-item-img"
+                    srcset="
+                      ./images/portfolio-img5.jpg     1x,
+                      ./images/portfolio-img5-2x.jpeg 2x
+                    "
                     src="./images/portfolio-img5.jpg"
                     alt="portfolio-imgage"
                     width="370"
@@ -205,6 +281,10 @@
                 <div class="portfolio-item-wrap">
                   <img
                     class="portfolio-item-img"
+                    srcset="
+                      ./images/portfolio-img6.jpg     1x,
+                      ./images/portfolio-img6-2x.jpeg 2x
+                    "
                     src="./images/portfolio-img6.jpg"
                     alt="portfolio-imgage"
                     width="370"
@@ -228,6 +308,10 @@
                 <div class="portfolio-item-wrap">
                   <img
                     class="portfolio-item-img"
+                    srcset="
+                      ./images/portfolio-img7.jpg     1x,
+                      ./images/portfolio-img7-2x.jpeg 2x
+                    "
                     src="./images/portfolio-img7.jpg"
                     alt="portfolio-imgage"
                     width="370"
@@ -249,6 +333,10 @@
                 <div class="portfolio-item-wrap">
                   <img
                     class="portfolio-item-img"
+                    srcset="
+                      ./images/portfolio-img8.jpg     1x,
+                      ./images/portfolio-img8-2x.jpeg 2x
+                    "
                     src="./images/portfolio-img8.jpg"
                     alt="portfolio-imgage"
                     width="370"
@@ -270,6 +358,10 @@
                 <div class="portfolio-item-wrap">
                   <img
                     class="portfolio-item-img"
+                    srcset="
+                      ./images/portfolio-img9.jpg     1x,
+                      ./images/portfolio-img9-2x.jpeg 2x
+                    "
                     src="./images/portfolio-img9.jpg"
                     alt="portfolio-imgage"
                     width="370"
@@ -294,57 +386,59 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <div class="footer__adresses">
-          <a class="logo footer--logo" lang="en" href="./index.html"
-            ><span class="logo__part">Web</span>Studio</a
-          >
-          <address class="address">
-            <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
-
-            <a
-              class="address__link link"
-              lang="en"
-              href="mailto;info@example.com"
-              >info@example.com</a
+        <div class="tablet__wrap">
+          <div class="footer__adresses">
+            <a class="logo footer--logo" lang="en" href="./index.html"
+              ><span class="logo__part">Web</span>Studio</a
             >
+            <address class="address">
+              <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
 
-            <a class="address__link link" href="tel:+380991111111"
-              >+38 099 111 11 11</a
-            >
-          </address>
-        </div>
-        <div class="soc">
-          <h3 class="soc__title">Присоединяйтесь</h3>
-          <ul class="soc__list list">
-            <li class="soc__item">
-              <a href="" class="soc__link">
-                <svg class="soc__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc__item">
-              <a href="" class="soc__link">
-                <svg class="soc__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc__item">
-              <a href="" class="soc__link">
-                <svg class="soc__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc__item">
-              <a href="" class="soc__link">
-                <svg class="soc__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              <a
+                class="address__link link"
+                lang="en"
+                href="mailto;info@example.com"
+                >info@example.com</a
+              >
+
+              <a class="address__link link" href="tel:+380991111111"
+                >+38 099 111 11 11</a
+              >
+            </address>
+          </div>
+          <div class="soc">
+            <h3 class="soc__title">Присоединяйтесь</h3>
+            <ul class="soc__list list">
+              <li class="soc__item">
+                <a href="" class="soc__link">
+                  <svg class="soc__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc__item">
+                <a href="" class="soc__link">
+                  <svg class="soc__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc__item">
+                <a href="" class="soc__link">
+                  <svg class="soc__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc__item">
+                <a href="" class="soc__link">
+                  <svg class="soc__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="subscribe">
           <h3 class="subscribe__title">Подпишитесь на рассылку</h3>
@@ -369,5 +463,6 @@
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
