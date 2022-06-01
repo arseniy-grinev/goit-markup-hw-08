@@ -2,22 +2,28 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     margin-left: -8px;
     @include tablet {
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
     @include desktop {
-        margin-bottom: 50px;
+        margin-bottom: 35px;
     }
 }
 
 .portfolio-filter-item {
+    display: block;
     margin-left: 8px;
+    margin-bottom: 15px;
+    
 }
 
 .portfolio-filter-btn {
+    display: block;
+    
+    
     font-family: inherit;
     @include font(16px, 1.62, 500, 0.03em);
     text-align: center;

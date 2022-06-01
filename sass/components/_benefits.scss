@@ -13,6 +13,7 @@
         flex-wrap: wrap;
         // justify-content: center;
         margin-left: -30px;
+        margin-bottom: -30px;
     }
 
     &__item {
@@ -53,6 +54,10 @@
         text-transform: uppercase;
         color: var(--sub-title-color);
         margin-bottom: 10px;
+        text-align: center;
+        @include tablet {
+            text-align: left;
+        }
     }
 
     &__text {

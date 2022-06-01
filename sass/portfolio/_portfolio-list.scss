@@ -1,5 +1,6 @@
 .portfolio-list {
-    margin-top: -30px;
+    // margin-top: -30px;
+    margin-bottom: -30px;
     
     @include tablet {
         display: flex;
@@ -10,7 +11,7 @@
 
 .portfolio-item {
     width: 100%;
-    margin-top: 30px;
+    margin-bottom: 30px;
     border: 1px solid #eeeeee;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
